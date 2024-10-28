@@ -109,10 +109,10 @@ p{
     font-size: 0.9375rem !important;
     font-weight: 600 !important;
     text-transform:capitalize !important;
-    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%) !important;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0  19%) !important;
     -webkit-transition: all .4s ease-out 0s !important;
     -o-transition: all .4s ease-out 0s !important;
-    -moz-transition: all .4s ease-out 0s!important;
+    -moz-transition: all .4s ease-out 0s !important;
     transition: all .4s ease-out 0s !important;
 
 
@@ -193,26 +193,60 @@ p{
     top: 01 !important;
     left: 0 !important;
     width: 100% !important;
-    background : var(--white-color);
+    background : var(--white-color)!;
     box-shadow: 0 0.125rem 1.75rem 0 rgb( 0,0,0,0.9);
     transition: all .15s ease-in-out 0s;
     
 }
 .top-banner{
     width: 100%;
-    background:url(./assets/images/bg/bg-1.jpg) ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 16.875rem 0 9.375rem;
+    background:url(./assets/images/bg/bg-1.jpg) !important;
+    background-size: cover  !important;
+    background-position: center  !important;
+    background-repeat: no-repeat  !important;
+    padding: 16.875rem 0 9.375rem  !important;
 
 }
 /* ==========counter desingn========== */
 .counter-section{
-    background-color: var(--primary-color);
-    padding: 2.5rem 0;
+    background-color: var(--primary-color)  !important;
+    padding: 2.5rem 0  !important;
 }
 .counter-section p{
-    color: var(--white-color);
-    text-transform: uppercase;
+    color: var(--white-color)  !important;
+    text-transform: uppercase  !important;
+}
+/* ===========about section css==================/ */
+.about-section{
+    background: var(--white-color)  !important;
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem  !important;
+}
+.about-section .text-sec{
+    padding-left: 2rem  !important;
+}
+/* ====================food type design section=============== */
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+.food-type ul li ::before{
+    position: absolute;
+    left: -2.1875rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 free";
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
 }
